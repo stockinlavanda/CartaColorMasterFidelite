@@ -1,0 +1,197 @@
+/* main.css */
+@mixin estilo-texto-y-fondo($color-letra, $color-fondo) {
+    color: $color-letra;
+    background-color: $color-fondo;
+}
+
+  * {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto; 
+}
+
+.container {
+    text-align: center;
+    place-items: center;
+    justify-items: center;
+
+}
+
+header {
+    h1{
+        @include estilo-texto-y-fondo(#fff,  #c5116c); 
+        text-align: center;
+        padding: 20px;
+        font-size: 30px;   
+    }
+    p {
+    @include estilo-texto-y-fondo(#fff,  #c5116c); 
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold
+    }
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    min-height: 100vh; 
+    h1 {
+        @include estilo-texto-y-fondo(#fff,  #c5116c); 
+        text-align: center;
+        padding: auto;
+        font-size: 36px;
+    }
+    h2 {
+        text-align: center;
+        padding: auto;
+        font-size: 36px;
+    }
+
+    h3{
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        font-size: 25px;
+        }
+    .seccion-tittle {
+        text-align: center;
+        padding: auto;
+        margin: 10px;
+        width: 100%;
+    }
+}
+
+.centrar-contenido {
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+main img {
+    object-fit: cover;
+}
+
+.color-list {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-items: center; 
+}
+
+.color-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.elements{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+}
+
+.card {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    .card img {
+        margin: auto;
+    }
+}
+
+input.quantity {
+    width: 40px;
+}
+
+.total {
+    @include estilo-texto-y-fondo(#fff,  #c5116c); 
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold
+    
+}
+
+.btn-css{
+    @include estilo-texto-y-fondo(#fff,  #c5116c); 
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold
+}
+
+$primary-color: #c5116c; 
+$border-color: #ccc;
+$light-grey: #eee;
+$darken-primary: darken($primary-color, 10%); 
+
+.container {
+    form {
+        
+        .mb-10px {
+            padding: 20px; 
+            border: 1px solid $light-grey; 
+            border-radius: 8px; 
+            background-color: #fff; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+            margin-bottom: 20px; 
+
+            input[type="text"],
+            input[type="tel"],
+            input[type="email"],
+            select {
+                width: 100%; 
+                padding: 10px 12px; 
+                margin-bottom: 10px; 
+                border: 1px solid $border-color; 
+                border-radius: 4px; 
+                box-sizing: border-box; 
+                font-size: 16px; 
+                -webkit-appearance: none; 
+                -moz-appearance: none;    
+                appearance: none;         
+
+                &:focus {
+                    border-color: $primary-color; 
+                    outline: none; 
+                    box-shadow: 0 0 5px rgba($primary-color, 0.5); 
+                }
+            }
+
+            label {
+                display: block; 
+            }
+        }
+    }
+}
+
+
+.btn-css {
+    display: inline-block; 
+    padding: 15px 30px;
+    background-color: $primary-color;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none; 
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: $darken-primary; 
+    }
+}

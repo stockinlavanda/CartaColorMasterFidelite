@@ -1,0 +1,10 @@
+node_modules/
+fuentes/
+*.log
+*.map
+*.ai
+*.psd
+*.pdf
+*.zip
+*.vscode
+*.txt

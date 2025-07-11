@@ -1,0 +1,1568 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Selector de Colores de Tinturas</title>
+</head>
+<body>
+    <header>
+        <h1>SELECCIONE LOS TONOS SEGÚN SU PEDIDO</h1>
+        <P>Tenga en cuenta la cantidad total de tinturas que ha comprado para que su pedido salga en tiempo y forma. Los tonos visibles son los disponibles en stock.</P>
+    </header>
+    <main>
+    <div class="container">
+        <form name="pedido de tonos color master" method="POST" data-netlify="true">
+            <div class="mb-10px">
+                <label><input type="text" name="Nombre" placeholder="Nombre" required /></label>
+                <label><input type="text" name="Apellido" placeholder="Apellido" required/></label>
+                <label><input type="tel" name="numero de telefono" placeholder="Teléfono"/></label>
+                <label><input type="email" name="Email" placeholder="Email" required/></label>
+                
+                <select id="plataformaCompra" name="Plataforma de compra" required>
+                    <option value="" disabled selected>Seleccione por donde realizó la compra</option>
+                    <option value="Página web">Página web</option>
+                    <!-- <option value="Mercado libre">Mercado libre</option> -->
+                    <option value="Sucursales">Sucursales</option> </select>
+
+                <select id="sucursalSelect" name="Sucursal" style="display: none;" required>
+                    <option value="" disabled selected>Seleccione una sucursal</option>
+                    <option value="Corrientes 11 - Córdoba">Corrientes 11 - Córdoba</option>
+                    <option value="Maestro Vidal 1496 - Córdoba">Maestro Vidal 1496 - Córdoba</option>
+                    <option value="Alem 602 - Córdoba">Alem 602 - Córdoba</option>
+                    <option value="Santa Rosa 373 - Córdoba">Santa Rosa 373 - Córdoba</option>
+                    <option value="9 de Julio 21 - Villa Carlos Paz">9 de Julio 21 - Villa Carlos Paz</option>
+                </select>
+    </div>
+    </div>  
+        <h2 class="m-4">CARTA DE COLORES COLOR MASTER</h2>
+            <section class="seccion-tittle">
+            <h3>NATURALES</h3>
+            <div class="container elements">
+                    <div class="mt-5 color-list mb-10px d-flex justify-content-center" style="align-items: center;">
+                        <div class="row row-cols-2 row-cols-sm-4 row-cols-md-7 row-cols-lg-7">
+                            <!-- Primer artículo -->
+                            <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                                <div class="card" style="width: 9rem; align-items: center;">
+                                    <img src="Images/01Naturales_1Negro.jpg" class="card-img-top mt-2" alt="Tono 1 Negro" style="width: 100px; height: 100px;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">1</h5>
+                                            <p class="card-text">Negro</p>
+                                            <input type="text" class="item-name" name="1 Negro" value="1 Negro" style="display: none;">
+                                            <input type="number" class="quantity" name="1 Negro" value="0" min="0" style="width: 8rem;">
+                                        </div>
+                                </div>
+                            </div>
+                            <!-- fin artículo -->
+                            <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                                <div class="card" style="width: 9rem; align-items: center;">
+                                    <img src="Images/01Naturales_3CastañoOscuro.jpg" class="card-img-top mt-2" alt="Tono 3 Castaño Oscuro" style="width: 100px; height: 100px;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">3</h5>
+                                            <p class="card-text">Castaño Oscuro</p>
+                                            <input type="text" class="item-name" name="3 Castaño Oscuro" value="3 castaño Oscuro" style="display: none;">
+                                            <input type="number" class="quantity" name="3 Castaño Oscuro" value="0" min="0" style="width: 8rem;">
+                                        </div>
+                                </div>
+                            </div>
+                            <!-- fin artículo -->
+                            <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                                <div class="card" style="width: 9rem; align-items: center;">
+                                    <img src="Images/01Naturales_4Castaño.jpg" class="card-img-top mt-2" alt="Tono 4 Castaño" style="width: 100px; height: 100px;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">4</h5>
+                                            <p class="card-text">Castaño</p>
+                                            <input type="text" class="item-name" name="4 Castaño" value="4 Castaño" style="display: none;">
+                                            <input type="number" class="quantity" name="4 Castaño" value="0" min="0" style="width: 8rem;">
+                                        </div>
+                                </div>
+                            </div>
+                            <!-- fin artículo -->
+                            <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                                <div class="card" style="width: 9rem; align-items: center;">
+                                    <img src="Images/01Naturales_5CastañoClaro.jpg" class="card-img-top mt-2" alt="Tono 5 Castaño Claro" style="width: 100px; height: 100px;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">5</h5>
+                                            <p class="card-text">Castaño Claro</p>
+                                            <input type="text" class="item-name" name="5 Castaño Claro" value="5 Castaño Claro" style="display: none;">
+                                            <input type="number" class="quantity" name="5 Castaño Claro" value="0" min="0" style="width: 8rem;">
+                                        </div>
+                                </div>
+                            </div>
+                            <!-- fin artículo -->
+                            <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                                <div class="card" style="width: 9rem; align-items: center;">
+                                    <img src="Images/01Naturales_6RubioOscuro.jpg" class="card-img-top mt-2" alt="Tono 6 Rubio Oscuro" style="width: 100px; height: 100px;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">6</h5>
+                                            <p class="card-text">Rubio Oscuro</p>
+                                            <input type="text" class="item-name" name="6 Rubio Oscuro" value="6 Rubio Oscuro" style="display: none;">
+                                            <input type="number" class="quantity" name="6 Rubio Oscuro" value="0" min="0" style="width: 8rem;">
+                                        </div>
+                                </div>
+                            </div>    
+                            <!-- fin artículo -->
+                            <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                                <div class="card" style="width: 9rem; align-items: center;">
+                                    <img src="Images/01Naturales_7RUbio.jpg" class="card-img-top mt-2" alt="Tono 7 Rubio" style="width: 100px; height: 100px;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">7</h5>
+                                            <p class="card-text">Rubio</p>
+                                            <input type="text" class="item-name" name="7 Rubio" value="7 Rubio" style="display: none;">
+                                            <input type="number" class="quantity" name="7 Rubio" value="0" min="0" style="width: 8rem;">
+                                        </div>
+                                </div>
+                            </div>    
+                            <!-- fin artículo -->
+                            <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                                <div class="card" style="width: 9rem; align-items: center;">
+                                    <img src="Images/01Naturales_8RubioClaro.jpg" class="card-img-top mt-2" alt="Tono 8 Rubio Claro" style="width: 100px; height: 100px;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">8</h5>
+                                            <p class="card-text">Rubio Claro</p>
+                                            <input type="text" class="item-name" name="8 Rubio Claro" value="8 Rubio Claro" style="display: none;">
+                                            <input type="number" class="quantity" name="8 Rubio Claro" value="0" min="0" style="width: 8rem;">
+                                        </div>
+                                </div>
+                            </div>    
+                            <!-- fin artículo -->
+                            <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                                <div class="card" style="width: 9rem; align-items: center;">
+                                    <img src="Images/01Naturales_6RubioOscuro.jpg" class="card-img-top mt-2" alt="Tono 90 Rubio Muy Claro" style="width: 100px; height: 100px;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">9</h5>
+                                            <p class="card-text">Rubio Muy Claro</p>
+                                            <input type="text" class="item-name" name="9 Rubio Muy Claro" value="9 Rubio Muy Claro" style="display: none;">
+                                            <input type="number" class="quantity" name="9 Rubio Muy Claro" value="0" min="0" style="width: 8rem;">
+                                        </div>
+                                </div>
+                            </div>    
+                            <!-- fin artículo -->
+                        </div>        
+                    </div>
+            </div>
+                <!-- fin naturales intensos  -->
+        </section>     
+        <section class="seccion-tittle">
+        <h3 class="m-4">NATURALES INTENSOS</h3>
+        <div class="container elements">
+                <div class="mt-5 color-list mb-10px" style="align-items: center;">
+                    <div class="row row-cols-2 row-cols-sm-4 row-cols-md-6 row-cols-lg-6">
+                        <!-- Primer artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/02NaturalesIntensos_5-0CastañoClaro.jpg" class="card-img-top mt-2" alt="Tono 50 Castaño Claro Intenso" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5.0</h5>
+                                        <p class="card-text">Castaño Claro Intenso</p>
+                                        <input type="text" class="item-name" name="50 Castaño Claro Intenso" value="50 Castaño Claro Intenso" style="display: none;">
+                                        <input type="number" class="quantity" name="50 Castaño Claro Intenso" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/02NaturalesIntensos_6-0RubioOscuro.jpg" class="card-img-top mt-2" alt="Tono 60 Rubio Oscuro" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">6.0</h5>
+                                        <p class="card-text">Rubio Oscuro Intenso</p>
+                                        <input type="text" class="item-name" name="60 Rubio Oscuro" value="60 castaño Oscuro" style="display: none;">
+                                        <input type="number" class="quantity" name="60 Rubio Oscuro" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/02NaturalesIntensos_7-0Rubio.jpg" class="card-img-top mt-2" alt="Tono 70 Rubio Intenso" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">7.0</h5>
+                                        <p class="card-text">Rubio Medio Intenso</p>
+                                        <input type="text" class="item-name" name="70 Rubio Intenso" value="70 Rubio Intenso" style="display: none;">
+                                        <input type="number" class="quantity" name="70 Rubio Intenso" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/01Naturales_5CastañoClaro.jpg" class="card-img-top mt-2" alt="Tono 80 Rubio Claro intenso" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">8.0</h5>
+                                        <p class="card-text">Rubio Claro intenso</p>
+                                        <input type="text" class="item-name" name="80 Rubio Claro intenso" value="80 Rubio Claro intenso" style="display: none;">
+                                        <input type="number" class="quantity" name="80 Rubio Claro intenso" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/01Naturales_6RubioOscuro.jpg" class="card-img-top mt-2" alt="Tono 90 Rubio Muy Claro intenso" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">9.0</h5>
+                                        <p class="card-text">Rubio Muy Claro intenso</p>
+                                        <input type="text" class="item-name" name="90 Rubio Muy Claro intenso" value="90 Rubio Muy Claro intenso" style="display: none;">
+                                        <input type="number" class="quantity" name="90 Rubio Muy Claro intenso" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>    
+                    </div>        
+                </div>
+                        <!-- fin artículo -->
+        </div>
+            <!-- fin naturales intensos  -->
+    </section>
+    <section class="seccion-tittle">
+        <h3>CENIZAS</h3>
+        <div class="container elements">
+                <div class="mt-5 color-list mb-10px" style="align-items: center;">
+                    <div class="row row-cols-2 row-cols-sm-4 row-cols-md-6 row-cols-lg-6">
+                        <!-- Primer artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/03Cenizas_5-1CastañoClaro.jpg" class="card-img-top mt-2" alt="Tono 5.1 Castaño Claro Ceniza" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5.1</h5>
+                                        <p class="card-text">Castaño Claro Ceniza</p>
+                                        <input type="text" class="item-name" name="5.1 Castaño Claro Ceniza" value="5.1 Castaño Claro Ceniza" style="display: none;">
+                                        <input type="number" class="quantity" name="5.1 Castaño Claro Ceniza" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/03Cenizas_6-1RubioOscuro.jpg" class="card-img-top mt-2" alt="Tono 61 Rubio Oscuro Ceniza" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">6.1</h5>
+                                        <p class="card-text">Rubio Oscuro Ceniza</p>
+                                        <input type="text" class="item-name" name="61 Rubio Oscuro Ceniza" value="61 Rubio Oscuro Ceniza" style="display: none;">
+                                        <input type="number" class="quantity" name="61 Rubio Oscuro Ceniza" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/03Cenizas_7-1Rubio.jpg" class="card-img-top mt-2" alt="Tono 71 Rubio Ceniza" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">7.1</h5>
+                                        <p class="card-text">Rubio Medio Ceniza</p>
+                                        <input type="text" class="item-name" name="71 Rubio Ceniza" value="71 Rubio Ceniza" style="display: none;">
+                                        <input type="number" class="quantity" name="71 Rubio Ceniza" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/03Cenizas_8-1RubioClaro.jpg" class="card-img-top mt-2" alt="Tono 81 Rubio Claro Ceniza" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">8.1</h5>
+                                        <p class="card-text">Rubio Claro Ceniza</p>
+                                        <input type="text" class="item-name" name="81 Rubio Claro Ceniza" value="81 Rubio Claro Ceniza" style="display: none;">
+                                        <input type="number" class="quantity" name="81 Rubio Claro Ceniza" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/03Cenizas_9-1RubioMuyClaro.jpg" class="card-img-top mt-2" alt="Tono 91 Rubio Muy Claro Ceniza" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">9.1</h5>
+                                        <p class="card-text">91 Rubio Muy Claro Ceniza</p>
+                                        <input type="text" class="item-name" name="91 Rubio Muy Claro Ceniza" value="91 Rubio Muy Claro Ceniza" style="display: none;">
+                                        <input type="number" class="quantity" name="91 Rubio Muy Claro Ceniza" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>    
+                        <!-- fin artículo -->
+                    </div>        
+                </div>
+        </div>
+            <!-- fin naturales cenizas  -->
+    </section>     
+    <section class="seccion-tittle">
+        <h3>CENIZAS INTENSOS</h3>
+        <div class="container elements">
+                <div class="mt-5 color-list mb-10px" style="align-items: center;">
+                    <div class="row row-cols-2 row-cols-sm-4 row-cols-md-6 row-cols-lg-6">
+                        <!-- Primer artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/04CenizasProfundos_5-11CastañoClaro.jpg" class="card-img-top mt-2" alt="Tono 5.11 Castaño Claro Ceniza Intenso" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5.11</h5>
+                                        <p class="card-text">Castaño Claro Ceniza Intenso</p>
+                                        <input type="text" class="item-name" name="5.11 Castaño Claro Ceniza Intenso" value="5.11 Castaño Claro Ceniza Intenso" style="display: none;">
+                                        <input type="number" class="quantity" name="5.11 Castaño Claro Ceniza Intenso" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/04CenizasProfundos_6-11RubioOscuro.jpg" class="card-img-top mt-2" alt="Tono 6.11 Rubio Oscuro Ceniza Intenso" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">6.11</h5>
+                                        <p class="card-text">Rubio Oscuro Ceniza Intenso</p>
+                                        <input type="text" class="item-name" name="6.11 Rubio Oscuro Ceniza Intenso" value="6.11 Rubio Oscuro Ceniza Intenso" style="display: none;">
+                                        <input type="number" class="quantity" name="6.11 Rubio Oscuro Ceniza Intenso" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/04CenizasProfundos_7-11Rubio.jpg" class="card-img-top mt-2" alt="Tono 7.11 Rubio Ceniza Intenso" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">7.11</h5>
+                                        <p class="card-text">7.11 Rubio Ceniza Intenso</p>
+                                        <input type="text" class="item-name" name="7.11 Rubio Ceniza Intenso" value="7.11 Rubio Ceniza Intenso" style="display: none;">
+                                        <input type="number" class="quantity" name="7.11 Rubio Ceniza Intenso" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/04CenizasProfundos_8-11RubioClaro.jpg" class="card-img-top mt-2" alt="Tono 8.11 Rubio Claro Ceniza intenso" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">8.11</h5>
+                                        <p class="card-text">Rubio Claro Ceniza intenso</p>
+                                        <input type="text" class="item-name" name="8.11 Rubio Claro Ceniza intenso" value="8.11 Rubio Claro Ceniza intenso" style="display: none;">
+                                        <input type="number" class="quantity" name="8.11 Rubio Claro Ceniza intenso" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/04CenizasProfundos_9-11RubioMuyClaro.jpg" class="card-img-top mt-2" alt="Tono 9.11 Rubio Muy Claro Ceniza Intenso" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">9.11</h5>
+                                        <p class="card-text">Rubio Muy Claro Ceniza Intenso</p>
+                                        <input type="text" class="item-name" name="9.11 Rubio Muy Claro Ceniza Intenso" value="9.11 Rubio Muy Claro Ceniza Intenso" style="display: none;">
+                                        <input type="number" class="quantity" name="9.11 Rubio Muy Claro Ceniza Intenso" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>    
+                        <!-- fin artículo -->
+                    </div>        
+                </div>
+        </div>
+            <!-- fin cenizas intensos  -->
+    </section>   
+    <section class="seccion-tittle">
+        <h3>NACARADOS Y GRISES</h3>
+        <div class="container elements">
+                <div class="mt-5 color-list mb-10px" style="align-items: center;">
+                    <div class="row row-cols-2 row-cols-sm-4 row-cols-md-6 row-cols-lg-6">
+                        <!-- Primer artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/05Nacarados+Grises_GrisOscuro.jpg" class="card-img-top mt-2" alt="Tono Gris Oscuro" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">GO</h5>
+                                        <p class="card-text">Gris Oscuro</p>
+                                        <br>
+                                        <input type="text" class="item-name" name="Gris Oscuro" value="Gris Oscuro" style="display: none;">
+                                        <input type="number" class="quantity" name="Gris Oscuro" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/05Nacarados+Grises_GrisClaro.jpg" class="card-img-top mt-2" alt="Tono Gris Claro" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">GC</h5>
+                                        <p class="card-text">Gris Claro</p>
+                                        <br>
+                                        <input type="text" class="item-name" name="Gris Claro" value="Gris Claro" style="display: none;">
+                                        <input type="number" class="quantity" name="Gris Claro" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/05Nacarados+Grises_GrisMuyClaro.jpg" class="card-img-top mt-2" alt="Tono Gris Extra Claro" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">GEC</h5>
+                                        <p class="card-text">Gris Extra Claro</p>
+                                        <br>
+                                        <input type="text" class="item-name" name="Gris Extra Claro" value="Gris Extra Claro" style="display: none;">
+                                        <input type="number" class="quantity" name="Gris Extra Claro" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/05Nacarados+Grises_8-12RubioClaroCenizaIrisado.jpg" class="card-img-top mt-2" alt="Tono 8.12 Rubio Claro Ceniza Irizado" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">8.12</h5>
+                                        <p class="card-text">Rubio Claro Ceniza Irizado</p>
+                                        <input type="text" class="item-name" name="8.12 Rubio Claro Ceniza Irizado" value="8.12 Rubio Claro Ceniza Irizado" style="display: none;">
+                                        <input type="number" class="quantity" name="8.12 Rubio Claro Ceniza Irizado" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/05Nacarados+Grises_9-12RubioMuyClaroCenizaIrisado.jpg" class="card-img-top mt-2" alt="Tono 9.12 Rubio Muy Claro Ceniza Irizado" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">9.12</h5>
+                                        <p class="card-text">Rubio Muy Claro Ceniza Irizado</p>
+                                        <input type="text" class="item-name" name="9.12 Rubio Muy Claro Ceniza Irizado" value="9.12 Rubio Muy Claro Ceniza Irizado" style="display: none;">
+                                        <input type="number" class="quantity" name="9.12 Rubio Muy Claro Ceniza Irizado" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>    
+                        <!-- fin artículo -->
+                    </div>        
+                </div>
+        </div>
+            <!-- fin nacarados y grises  -->
+    </section> 
+    <section class="seccion-tittle">
+        <h3>CENIZAS AZULADOS</h3>
+        <div class="container elements">
+                <div class="mt-5 color-list mb-10px" style="align-items: center;">
+                    <div class="row row-cols-2 row-cols-sm-4 row-cols-md-6 row-cols-lg-6">
+                        <!-- Primer artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/06CenizasAzulados_6-7RubioOscuro.jpg" class="card-img-top mt-2" alt="Tono 6.7 Rubio Oscuro Ceniza Azul" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">6.7</h5>
+                                        <p class="card-text">Rubio Oscuro Ceniza Azul</p>
+                                        <input type="text" class="item-name" name="6.7 Rubio Oscuro Ceniza Azul" value="6.7 Rubio Oscuro Ceniza Azul" style="display: none;">
+                                        <input type="number" class="quantity" name="6.7 Rubio Oscuro Ceniza Azul" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/05Nacarados+Grises_GrisClaro.jpg" class="card-img-top mt-2" alt="Tono 7.7 Rubio Ceniza Azul" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">7.7</h5>
+                                        <p class="card-text">Rubio Ceniza Azul</p>
+                                        <br>
+                                        <input type="text" class="item-name" name="7.7 Rubio Ceniza Azul" value="7.7 Rubio Ceniza Azul" style="display: none;">
+                                        <input type="number" class="quantity" name="7.7 Rubio Ceniza Azul" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/06CenizasAzulados_8-7RubioClaro.jpg" class="card-img-top mt-2" alt="Tono 8.7 Rubio Claro Ceniza Azul" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">8.7</h5>
+                                        <p class="card-text">Rubio Claro Ceniza Azul</p>
+                                        <input type="text" class="item-name" name="8.7 Rubio Claro Ceniza Azul" value="8.7 Rubio Claro Ceniza Azul" style="display: none;">
+                                        <input type="number" class="quantity" name="8.7 Rubio Claro Ceniza Azul" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/06CenizasAzulados_9-7RubioMuyClaro.jpg" class="card-img-top mt-2" alt="Tono 9.7 Rubio Muy Claro Ceniza Azul" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">9.7</h5>
+                                        <p class="card-text">Rubio Muy Claro Ceniza Azul</p>
+                                        <input type="text" class="item-name" name="9.7 Rubio Muy Claro Ceniza Azul" value="9.7 Rubio Muy Claro Ceniza Azul" style="display: none;">
+                                        <input type="number" class="quantity" name="9.7 Rubio Muy Claro Ceniza Azul" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        </div>        
+                </div>
+        </div>
+            <!-- fin cenizas azulados  -->
+    </section> 
+    <section class="seccion-tittle">
+        <h3>IRISADOS</h3>
+        <div class="container elements">
+                <div class="mt-5 color-list mb-10px" style="align-items: center;">
+                    <div class="row row-cols-2 row-cols-sm-4 row-cols-md-6 row-cols-lg-6">
+                        <!-- Primer artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/07Irisados_5-2CastañoClaro.jpg" class="card-img-top mt-2" alt="Tono Castaño Claro Irisado" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5.2</h5>
+                                        <p class="card-text">Castaño Claro Irisado</p>
+                                        <input type="text" class="item-name" name="5.2 Castaño Claro Irisado" value="5.2 Castaño Claro Irisado" style="display: none;">
+                                        <input type="number" class="quantity" name="5.2 Castaño Claro Irisado" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/07Irisados_6-2RubioOscuro.jpg" class="card-img-top mt-2" alt="Tono 6.2 Rubio Oscuro Irisado" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">6.2</h5>
+                                        <p class="card-text">Rubio Oscuro Irisado</p>
+                                        <input type="text" class="item-name" name="6.2 Rubio Oscuro Irisado" value="6.2 Rubio Oscuro Irisado" style="display: none;">
+                                        <input type="number" class="quantity" name="6.2 Rubio Oscuro Irisado" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/07Irisados_7-2Rubio.jpg" class="card-img-top mt-2" alt="Tono 7.2 Rubio Medio Irisado" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">7.2</h5>
+                                        <p class="card-text">Rubio Medio Irisado</p>
+                                        <input type="text" class="item-name" name="7.2 Rubio Medio Irisado" value="7.2 Rubio Medio Irisado" style="display: none;">
+                                        <input type="number" class="quantity" name="7.2 Rubio Medio Irisado" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/07Irisados_8-2RubioClaro.jpg" class="card-img-top mt-2" alt="Tono 8.2 Rubio Claro Irizado" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">8.2</h5>
+                                        <p class="card-text">Rubio Claro Irizado</p>
+                                        <input type="text" class="item-name" name="8.2 Rubio Claro Irizado" value="8.2 Rubio Claro Irizado" style="display: none;">
+                                        <input type="number" class="quantity" name="8.2 Rubio Claro Irizado" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/07Irisados_5-22CastañoClaroProfundo.jpg" class="card-img-top mt-2" alt="Tono 5.22 Castaño Claro Irizado Intenso" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5.22</h5>
+                                        <p class="card-text">Castaño Claro Irizado Intenso</p>
+                                        <input type="text" class="item-name" name="5.22 Castaño Claro Irizado Intenso" value="5.22Castaño Claro Irizado Intenso" style="display: none;">
+                                        <input type="number" class="quantity" name="5.22Castaño Claro Irizado Intenso" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>    
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/07Irisados_6-22RubioOscuroProfundo.jpg" class="card-img-top mt-2" alt="Tono 6.22 Rubio Oscuro Irizado Intenso" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">6.22</h5>
+                                        <p class="card-text">Rubio Oscuro Irizado Intenso</p>
+                                        <input type="text" class="item-name" name="6.22 Rubio Oscuro Irizado Intenso" value="6.22 Rubio Oscuro Irizado Intenso" style="display: none;">
+                                        <input type="number" class="quantity" name="6.22 Rubio Oscuro Irizado Intenso" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                    </div>        
+                </div>
+        </div>
+            <!-- fin irisados  -->
+    </section>
+    <section class="seccion-tittle">
+        <h3>DORADOS</h3>
+        <div class="container elements">
+                <div class="mt-5 color-list mb-10px" style="align-items: center;">
+                    <div class="row row-cols-2 row-cols-sm-4 row-cols-md-6 row-cols-lg-6">
+                        <!-- Primer artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/08Dorados_5-3CastañoClaro.jpg" class="card-img-top mt-2" alt="Tono 5.3 Castaño Claro Dorado" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5.3</h5>
+                                        <p class="card-text">Castaño Claro Dorado</p>
+                                        <input type="text" class="item-name" name="5.3 Castaño Claro Dorado" value="5.3 Castaño Claro Dorado" style="display: none;">
+                                        <input type="number" class="quantity" name="5.3 Castaño Claro Dorado" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/08Dorados_6-3RubioOscuro.jpg" class="card-img-top mt-2" alt="Tono 6.3 Rubio Oscuro Dorado" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">6.3</h5>
+                                        <p class="card-text">Rubio Oscuro Dorado</p>
+                                        <input type="text" class="item-name" name="6.3 Rubio Oscuro Dorado" value="6.3 Rubio Oscuro Dorado" style="display: none;">
+                                        <input type="number" class="quantity" name="6.3 Rubio Oscuro Dorado" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/08Dorados_7-3Rubio.jpg" class="card-img-top mt-2" alt="Tono 7.3 Rubio Medio Dorado" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">7.3</h5>
+                                        <p class="card-text">Rubio Medio Dorado</p>
+                                        <input type="text" class="item-name" name="7.3 Rubio Medio Dorado" value="7.3 Rubio Medio Dorado" style="display: none;">
+                                        <input type="number" class="quantity" name="7.3 Rubio Medio Dorado" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/08Dorados_8-3RubioClaro.jpg" class="card-img-top mt-2" alt="Tono 8.3 Rubio Claro Dorado" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">8.3</h5>
+                                        <p class="card-text">Rubio Claro Ceniza Irizado</p>
+                                        <input type="text" class="item-name" name="8.3 Rubio Claro Dorado" value="8.3 Rubio Claro Dorado" style="display: none;">
+                                        <input type="number" class="quantity" name="8.3 Rubio Claro Dorado" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/08Dorados_9-3RubioMuyClaro.jpg" class="card-img-top mt-2" alt="Tono 9.3 Rubio Muy Claro Dorado" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">9.3</h5>
+                                        <p class="card-text">Rubio Muy Claro Dorado</p>
+                                        <input type="text" class="item-name" name="9.3 Rubio Muy Claro Dorado" value="9.3 Rubio Muy Claro Dorado" style="display: none;">
+                                        <input type="number" class="quantity" name="9.3 Rubio Muy Claro Dorado" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>    
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/09DoradosIntensos_5-33CastañoClaro.jpg" class="card-img-top mt-2" alt="Tono 5.33 Castaño Claro Dorado Intenso" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5.33</h5>
+                                        <p class="card-text">Castaño Claro Dorado Intenso</p>
+                                        <input type="text" class="item-name" name="5.33 Castaño Claro Dorado Intenso" value="5.33 Castaño Claro Dorado Intenso" style="display: none;">
+                                        <input type="number" class="quantity" name="5.33 Castaño Claro Dorado Intenso" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/09DoradosIntensos_6-33RubioOscuro.jpg" class="card-img-top mt-2" alt="Tono 6.33 Rubio Oscuro Dorado Intenso" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">6.33</h5>
+                                        <p class="card-text">Rubio Oscuro Dorado Intenso</p>
+                                        <input type="text" class="item-name" name="6.33 Rubio Oscuro Dorado Intenso" value="6.33 Rubio Oscuro Dorado Intenso" style="display: none;">
+                                        <input type="number" class="quantity" name="6.33 Rubio Oscuro Dorado Intenso" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/09DoradosIntensos_7-33RubioDorado.jpg" class="card-img-top mt-2" alt="Tono 7.33 Rubio Medio Dorado Intenso" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">7.33</h5>
+                                        <p class="card-text">Rubio Medio Dorado Intenso</p>
+                                        <input type="text" class="item-name" name="7.33 Rubio Medio Dorado Intenso" value="7.33 Rubio Medio Dorado Intenso" style="display: none;">
+                                        <input type="number" class="quantity" name="7.33 Rubio Medio Dorado Intenso" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/09DoradosIntensos_8-33RubioClaro.jpg" class="card-img-top mt-2" alt="Tono 8.33 Rubio Claro Dorado Intenso" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">8.33</h5>
+                                        <p class="card-text">Rubio Claro Irizado Intenso</p>
+                                        <input type="text" class="item-name" name="8.33 Rubio Claro Dorado Intenso" value="8.33 Rubio Claro Dorado Intenso" style="display: none;">
+                                        <input type="number" class="quantity" name="8.33 Rubio Claro Dorado Intenso" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/08Dorados_9-3RubioMuyClaro.jpg" class="card-img-top mt-2" alt="Tono 9.33 Rubio Muy Claro Dorado" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">9.33</h5>
+                                        <p class="card-text">Rubio Muy Claro Dorado Intenso</p>
+                                        <input type="text" class="item-name" name="9.33 Rubio Muy Claro Dorado Intenso" value="9.33 Rubio Muy Claro Dorado Intenso" style="display: none;">
+                                        <input type="number" class="quantity" name="9.33 Rubio Muy Claro Dorado Intenso" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>    
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/09DoradosIntensos_6-31RubioOscuroCeniza.jpg" class="card-img-top mt-2" alt="Tono 6.31 Rubio Oscuro Dorado Ceniza" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">6.31</h5>
+                                        <p class="card-text">Rubio Oscuro Dorado Ceniza</p>
+                                        <input type="text" class="item-name" name="6.31 Rubio Oscuro Dorado Ceniza" value="6.31 Rubio Oscuro Dorado Ceniza" style="display: none;">
+                                        <input type="number" class="quantity" name="6.31 Rubio Oscuro Dorado Ceniza" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/09DoradosIntensos_7-31RubioCeniza.jpg" class="card-img-top mt-2" alt="Tono 7.31 Rubio Dorado Ceniza" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">7.31</h5>
+                                        <p class="card-text">Rubio Dorado Ceniza</p>
+                                        <input type="text" class="item-name" name="7.31 Rubio Dorado Ceniza" value="7.31 Rubio Dorado Ceniza" style="display: none;">
+                                        <input type="number" class="quantity" name="7.31 Rubio Dorado Ceniza" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/09DoradosIntensos_8-31RubioClaroCeniza.jpg" class="card-img-top mt-2" alt="Tono 8.31 Rubio Claro Dorado Ceniza" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">8.31</h5>
+                                        <p class="card-text">Rubio Claro Dorado Ceniza</p>
+                                        <input type="text" class="item-name" name="8.31 Rubio Claro Dorado Ceniza" value="8.31 Rubio Claro Dorado Ceniza" style="display: none;">
+                                        <input type="number" class="quantity" name="8.31 Rubio Claro Dorado Ceniza" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/09DoradosIntensos_9-31RubioMuyClaroCeniza.jpg" class="card-img-top mt-2" alt="Tono 9.31 Rubio Muy Claro Dorado Ceniza" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">9.31</h5>
+                                        <p class="card-text">Rubio Muy Claro Dorado Ceniza</p>
+                                        <input type="text" class="item-name" name="9.31 Rubio Muy Claro Dorado Ceniza" value="9.31 Rubio Muy Claro Dorado Ceniza" style="display: none;">
+                                        <input type="number" class="quantity" name="9.3 Rubio Muy Claro Dorado Ceniza" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>    
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/09DoradosIntensos_6-34RubioOscuroCobrizo.jpg" class="card-img-top mt-2" alt="Tono 6.34 Rubio Oscuro Dorado Cobrizo" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">6.34</h5>
+                                        <p class="card-text">Rubio Oscuro Dorado Cobrizo</p>
+                                        <input type="text" class="item-name" name="6.34 Rubio Oscuro Dorado Cobrizo" value="6.34 Rubio Oscuro Dorado Cobrizo" style="display: none;">
+                                        <input type="number" class="quantity" name="6.34 Rubio Oscuro Dorado Cobrizo" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>    
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/09DoradosIntensos_7-34RubioCobrizo.jpg" class="card-img-top mt-2" alt="Tono 7.34 Rubio Dorado Cobrizo" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">7.34</h5>
+                                        <p class="card-text">Rubio Dorado Cobrizo</p>
+                                        <input type="text" class="item-name" name="7.34 Rubio Dorado Cobrizo" value="7.34 Rubio Dorado Cobrizo" style="display: none;">
+                                        <input type="number" class="quantity" name="7.34 Rubio Dorado Cobrizo" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>    
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/09DoradosIntensos_8-34RubioClaroCobrizo.jpg" class="card-img-top mt-2" alt="Tono 8.34 Rubio Claro Dorado Cobrizo" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">8.34</h5>
+                                        <p class="card-text">Rubio Claro Dorado Cobrizo</p>
+                                        <input type="text" class="item-name" name="8.34 Rubio Claro Dorado Cobrizo" value="8.34 Rubio Claro Dorado Cobrizo" style="display: none;">
+                                        <input type="number" class="quantity" name="8.34 Rubio Claro Dorado Cobrizo" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>    
+                        <!-- fin artículo -->
+                    </div>        
+                </div>
+        </div>
+            <!-- fin dorados  -->
+    </section>
+    <section class="seccion-tittle">
+        <h3>MARRONES CALIDOS Y FRIOS</h3>
+        <div class="container elements">
+                <div class="mt-5 color-list mb-10px" style="align-items: center;">
+                    <div class="row row-cols-2 row-cols-sm-4 row-cols-md-6 row-cols-lg-6">
+                        <!-- Primer artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/10MarronesCalidosFrios_5-8CastañoClaroC.jpg" class="card-img-top mt-2" alt="Tono 5.8C Castaño Claro Marrón Cálido" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5.8C</h5>
+                                        <p class="card-text">Castaño Claro Marrón Cálido</p>
+                                        <input type="text" class="item-name" name="5.8C Castaño Claro Marrón Cálido" value="5.8C Castaño Claro Marrón Cálido" style="display: none;">
+                                        <input type="number" class="quantity" name="5.8C Castaño Claro Marrón Cálido" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/10MarronesCalidosFrios_6-8RubioOscuroC.jpg" class="card-img-top mt-2" alt="Tono 6.8C Rubio Oscuro Marrón Cálido" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">6.8C</h5>
+                                        <p class="card-text">Rubio Oscuro Marrón Cálido</p>
+                                        <input type="text" class="item-name" name="6.8C Rubio Oscuro Marrón Cálido" value="6.8C Rubio Oscuro Marrón Cálido" style="display: none;">
+                                        <input type="number" class="quantity" name="6.8C Rubio Oscuro Marrón Cálido" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/10MarronesCalidosFrios_7-8RubioC.jpg" class="card-img-top mt-2" alt="Tono 7.8C Rubio Marrón Cálido" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">7.8C</h5>
+                                        <p class="card-text">Rubio Marrón Cálido</p>
+                                        <input type="text" class="item-name" name="7.8C Rubio Marrón Cálido" value="7.8C Rubio Marrón Cálido" style="display: none;">
+                                        <input type="number" class="quantity" name="7.8C Rubio Marrón Cálido" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/10MarronesCalidosFrios_8-8RubioClaroC.jpg" class="card-img-top mt-2" alt="Tono 8.8C Rubio Claro Marrón Cálido" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">8.8C</h5>
+                                        <p class="card-text">Rubio Claro Marrón Cálido</p>
+                                        <input type="text" class="item-name" name="8.8C Rubio Claro Marrón Cálido" value="8.8C Rubio Claro Marrón Cálido" style="display: none;">
+                                        <input type="number" class="quantity" name="8.8C Rubio Claro Marrón Cálido" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/10MarronesCalidosFrios_5-8CastañoClaroF.jpg" class="card-img-top mt-2" alt="Tono 5.8F Rubio Claro Marrón Frío" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5.8F</h5>
+                                        <p class="card-text">Rubio Claro Marrón Frío</p>
+                                        <input type="text" class="item-name" name="5.8F Rubio Claro Marrón Frío" value="5.8F Rubio Claro Marrón Frío" style="display: none;">
+                                        <input type="number" class="quantity" name="5.8F Rubio Claro Marrón Frío" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>    
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/10MarronesCalidosFrios_6-8RubioOscuroF.jpg" class="card-img-top mt-2" alt="Tono 6.8F Rubio Oscuro Marrón Cálido" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">6.8F</h5>
+                                        <p class="card-text">Rubio Oscuro Marrón Cálido</p>
+                                        <input type="text" class="item-name" name="6.8F Rubio Oscuro Marrón Cálido" value="6.8F Rubio Oscuro Marrón Cálido" style="display: none;">
+                                        <input type="number" class="quantity" name="6.8F Rubio Oscuro Marrón Cálido" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>    
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/10MarronesCalidosFrios_7-8RubioF.jpg" class="card-img-top mt-2" alt="Tono 7.8F Rubio Marrón Cálido" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">7.8F</h5>
+                                        <p class="card-text">Rubio Marrón Cálido</p>
+                                        <input type="text" class="item-name" name="7.8F Rubio Marrón Cálido" value="7.8F Rubio Marrón Cálido" style="display: none;">
+                                        <input type="number" class="quantity" name="7.8F Rubio Marrón Cálido" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>    
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/10MarronesCalidosFrios_8-8RubioClaroF.jpg" class="card-img-top mt-2" alt="Tono 8.8F Rubio Claro Marrón Frío" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">8.8F</h5>
+                                        <p class="card-text">Rubio Claro Marrón Frío</p>
+                                        <input type="text" class="item-name" name="8.8F Rubio Claro Marrón Frío" value="8.8F Rubio Claro Marrón Frío" style="display: none;">
+                                        <input type="number" class="quantity" name="8.8F Rubio Claro Marrón Frío" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>    
+                        <!-- fin artículo -->
+                    </div>        
+                </div>
+        </div>
+            <!-- fin marrones frios y calidos   -->
+    </section>
+    <section class="seccion-tittle">
+        <h3>COBRIZOS</h3>
+        <div class="container elements">
+                <div class="mt-5 color-list mb-10px" style="align-items: center;">
+                    <div class="row row-cols-2 row-cols-sm-4 row-cols-md-6 row-cols-lg-6">
+                        <!-- Primer artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/11Cobrizos_6-4RubioOscuro.jpg" class="card-img-top mt-2" alt="Tono 6.4 Rubio Oscuro Cobrizo" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">6.4</h5>
+                                        <p class="card-text">Rubio Oscuro Cobrizo</p>
+                                        <input type="text" class="item-name" name="6.4 Rubio Oscuro Cobrizo" value="6.4 Rubio Oscuro Cobrizo" style="display: none;">
+                                        <input type="number" class="quantity" name="6.4 Rubio Oscuro Cobrizo" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/11Cobrizos_7-4Rubio.jpg" class="card-img-top mt-2" alt="Tono 7.4 Rubio Medio Cobrizo" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">7.4</h5>
+                                        <p class="card-text">Rubio Medio Cobrizo</p>
+                                        <input type="text" class="item-name" name="7.4 Rubio Medio Cobrizo" value="7.4 Rubio Medio Cobrizo" style="display: none;">
+                                        <input type="number" class="quantity" name="7.4 Rubio Medio Cobrizo" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/11Cobrizos_8-4RubioClaro.jpg" class="card-img-top mt-2" alt="Tono 8.4 Rubio Claro Cobrizo" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">8.4</h5>
+                                        <p class="card-text">Rubio Claro Cobrizo</p>
+                                        <input type="text" class="item-name" name="8.4 Rubio Claro Cobrizo" value="8.4 Rubio Claro Cobrizo" style="display: none;">
+                                        <input type="number" class="quantity" name="8.4 Rubio Claro Cobrizo" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/11Cobrizos_6-45RubioOscuroCaoba.jpg" class="card-img-top mt-2" alt="Tono 6.45 Rubio Oscuro Cobrizo Caoba" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">6.45</h5>
+                                        <p class="card-text">Rubio Oscuro Cobrizo Caoba</p>
+                                        <input type="text" class="item-name" name="6.45 Rubio Oscuro Cobrizo Caoba" value="6.45 Rubio Oscuro Cobrizo Caoba" style="display: none;">
+                                        <input type="number" class="quantity" name="6.45 Rubio Oscuro Cobrizo Caoba" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/11Cobrizos_7-45RubioCaoba.jpg" class="card-img-top mt-2" alt="Tono 7.45 Rubio Cobrizo Caoba" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">7.45</h5>
+                                        <p class="card-text">Rubio Cobrizo Caoba</p>
+                                        <input type="text" class="item-name" name="7.45 Rubio Cobrizo Caoba" value="7.45 Rubio Cobrizo Caoba" style="display: none;">
+                                        <input type="number" class="quantity" name="7.45 Rubio Cobrizo Caoba" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>    
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/11Cobrizos_6-46RubioOscuroRojizo.jpg" class="card-img-top mt-2" alt="Tono 6.46 Rubio Oscuro Cobrizo Rojizo" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">6.46</h5>
+                                        <p class="card-text">Rubio Oscuro Cobrizo Rojizo</p>
+                                        <input type="text" class="item-name" name="6.46 Rubio Oscuro Cobrizo Rojizo" value="6.46 Rubio Oscuro Cobrizo Rojizo" style="display: none;">
+                                        <input type="number" class="quantity" name="6.46 Rubio Oscuro Cobrizo Rojizo" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>    
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/11Cobrizos_7-46RubioRojizo.jpg" class="card-img-top mt-2" alt="Tono 7.46 Rubio Cobrizo Rojizo" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">7.46</h5>
+                                        <p class="card-text">Rubio Cobrizo Rojizo</p>
+                                        <input type="text" class="item-name" name="7.46 Rubio Cobrizo Rojizo" value="7.46 Rubio Cobrizo Rojizo" style="display: none;">
+                                        <input type="number" class="quantity" name="7.46 Rubio Cobrizo Rojizo" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>    
+                        <!-- fin artículo -->
+                    </div>        
+                </div>
+        </div>
+            <!-- fin cobrizos  -->
+    </section>
+    <section class="seccion-tittle">
+        <h3>CAOBAS</h3>
+        <div class="container elements">
+                <div class="mt-5 color-list mb-10px" style="align-items: center;">
+                    <div class="row row-cols-2 row-cols-sm-4 row-cols-md-6 row-cols-lg-6">
+                        <!-- Primer artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/12Caobas_4-5Castaño.jpg" class="card-img-top mt-2" alt="Tono 4.5 Castaño Caoba" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">4.5</h5>
+                                        <p class="card-text">Castaño Caoba</p>
+                                        <br>
+                                        <input type="text" class="item-name" name="4.5 Castaño Caoba" value="4.5 Castaño Caoba" style="display: none;">
+                                        <input type="number" class="quantity" name="4.5 Castaño Caoba" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/12Caobas_5-5CastañoClaro.jpg" class="card-img-top mt-2" alt="Tono 5.5 Castaño Claro Caoba" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5.5</h5>
+                                        <p class="card-text">Castaño Claro Caoba</p>
+                                        <input type="text" class="item-name" name="5.5 Castaño Claro Caoba" value="5.5 Castaño Claro Caoba" style="display: none;">
+                                        <input type="number" class="quantity" name="5.5 Castaño Claro Caoba" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/12Caobas_6-5RubioOscuro.jpg" class="card-img-top mt-2" alt="Tono 6.5 Rubio Oscuro Caoba" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">6.5</h5>
+                                        <p class="card-text">Rubio Oscuro Caoba</p>
+                                        <input type="text" class="item-name" name="6.5 Rubio Oscuro Caoba" value="6.5 Rubio Oscuro Caoba" style="display: none;">
+                                        <input type="number" class="quantity" name="6.5 Rubio Oscuro Caoba" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                    </div>        
+                </div>
+        </div>
+            <!-- fin caobas  -->
+    </section>
+    <section class="seccion-tittle">
+        <h3>ROJIZOS</h3>
+        <div class="container elements">
+                <div class="mt-5 color-list mb-10px" style="align-items: center;">
+                    <div class="row row-cols-2 row-cols-sm-4 row-cols-md-6 row-cols-lg-6">
+                        <!-- Primer artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/13Rojizos_6-6RubioOscuroCeniza.jpg" class="card-img-top mt-2" alt="Tono 6.6 Rubio Oscuro Rojizo" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">6.6</h5>
+                                        <p class="card-text">Rubio Oscuro Rojizo</p>
+                                        <input type="text" class="item-name" name="6.6 Rubio Oscuro Rojizo" value="6.6 Rubio Oscuro Rojizo" style="display: none;">
+                                        <input type="number" class="quantity" name="6.6 Rubio Oscuro Rojizo" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/13Rojizos_5-64CastañoClaroRojizoCobrizo.jpg" class="card-img-top mt-2" alt="Tono 5.64 Castaño Claro Rojizo Cobrizo" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5.64</h5>
+                                        <p class="card-text">Castaño Claro Rojizo Cobrizo</p>
+                                        <input type="text" class="item-name" name="5.64 Castaño Claro Rojizo Cobrizo" value="5.64 Castaño Claro Rojizo Cobrizo" style="display: none;">
+                                        <input type="number" class="quantity" name="5.64 Castaño Claro Rojizo Cobrizo" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/13Rojizos_5-62CastañoClaroROjizoIrisado.jpg" class="card-img-top mt-2" alt="Tono 5.62 Castaño Claro Rojizo Irisado" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5.62</h5>
+                                        <p class="card-text">Castaño Claro Rojizo Irisado</p>
+                                        <input type="text" class="item-name" name="5.62 Castaño Claro Rojizo Irisado" value="5.62 Castaño Claro Rojizo Irisado" style="display: none;">
+                                        <input type="number" class="quantity" name="5.62 Castaño Claro Rojizo Irisado" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/13Rojizos_5-62CastañoClaroROjizoIrisado.jpg" class="card-img-top mt-2" alt="Tono 6.62 Rubio Oscuro Rojizo Irisado" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">6.62</h5>
+                                        <p class="card-text">Rubio Oscuro Rojizo Irisado</p>
+                                        <input type="text" class="item-name" name="6.62 Rubio Oscuro Rojizo Irisado" value="6.62 Rubio Oscuro Rojizo Irisado" style="display: none;">
+                                        <input type="number" class="quantity" name="6.62 Rubio Oscuro Rojizo Irisado" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/13Rojizos_7-62RubioRojizoIrisado.jpg" class="card-img-top mt-2" alt="Tono 7.62 Rubio Rojizo Irisado" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">7.62</h5>
+                                        <p class="card-text">Rubio Rojizo Irisado</p>
+                                        <input type="text" class="item-name" name="7.62 Rubio Rojizo Irisado" value="7.62 Rubio Rojizo Irisado" style="display: none;">
+                                        <input type="number" class="quantity" name="7.62 Rubio Rojizo Irisado" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/14RojizosEspeciales_5-66CastañoClaroRojizo+Rojo.jpg" class="card-img-top mt-2" alt="Tono 5.66 + R Castaño Claro Rojizo + Rojo" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5.66 + R</h5>
+                                        <p class="card-text">Castaño Claro Rojizo + Rojo</p>
+                                        <input type="text" class="item-name" name="5.66 + R Castaño Claro Rojizo + Rojo" value="5.66 + R Castaño Claro Rojizo + Rojo" style="display: none;">
+                                        <input type="number" class="quantity" name="5.66 + R Castaño Claro Rojizo + Rojo" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <!-- <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/14RojizosEspeciales_6-66RubioClaroRojizo+Rojo.jpg" class="card-img-top mt-2" alt="Tono 6.66 + R Rubio Oscuro Rojizo + Rojo" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">6.66 + R</h5>
+                                        <p class="card-text">Rubio Oscuro Rojizo + Rojo</p>
+                                        <input type="text" class="item-name" name="6.66 + R Rubio Oscuro Rojizo + Rojo" value="6.66 + R Rubio Oscuro Rojizo + Rojo" style="display: none;">
+                                        <input type="number" class="quantity" name="6.66 + R Rubio Oscuro Rojizo + Rojo" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div> -->
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/14RojizosEspeciales_7-66RubioRojizo+Rojo.jpg" class="card-img-top mt-2" alt="Tono 7.66 + R Rubio Rojizo + Rojo" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">7.66 + R</h5>
+                                        <p class="card-text">7.66 + R Rubio Rojizo + Rojo</p>
+                                        <input type="text" class="item-name" name="7.66 + R Rubio Rojizo + Rojo" value="7.66 + R Rubio Rojizo + Rojo" style="display: none;">
+                                        <input type="number" class="quantity" name="7.66 + R Rubio Rojizo + Rojo" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                    </div>        
+                </div>
+        </div>
+            <!-- fin de rojizos   -->
+    </section>
+    <section class="seccion-tittle">
+        <h3>ACLARANTES </h3>
+        <div class="container elements">
+                <div class="mt-5 color-list mb-10px" style="align-items: center;">
+                    <div class="row row-cols-2 row-cols-sm-4 row-cols-md-6 row-cols-lg-6">
+                        <!-- Primer artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/15Aclarantes_10natural.jpg" class="card-img-top mt-2" alt="Tono 10 Aclarante al Natural" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">10</h5>
+                                        <p class="card-text">Aclarante al Natural</p>
+                                        <input type="text" class="item-name" name="10 Aclarante al Natural" value="10 Aclarante al Natural" style="display: none;">
+                                        <input type="number" class="quantity" name="10 Aclarante al Natural" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/15Aclarantes_10-1Ceniza.jpg" class="card-img-top mt-2" alt="Tono 10.1 Aclarante al Ceniza" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">10.1</h5>
+                                        <p class="card-text">Aclarante al Ceniza</p>
+                                        <input type="text" class="item-name" name="10.11 Aclarante al Ceniza" value="10.1 Aclarante al Ceniza" style="display: none;">
+                                        <input type="number" class="quantity" name="10.1 Aclarante al Ceniza" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/15Aclarantes_10-11CenizaProfundo.jpg" class="card-img-top mt-2" alt="Tono 10.11 Aclarante al Ceniza Profundo" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">10.11</h5>
+                                        <p class="card-text">Aclarante al Ceniza Profundo</p>
+                                        <input type="text" class="item-name" name="10.11 Aclarante al Ceniza Profundo" value="10.11 Aclarante al Ceniza Profundo" style="display: none;">
+                                        <input type="number" class="quantity" name="10.11 Aclarante al Ceniza Profundo" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/15Aclarantes_10-2Irisado.jpg" class="card-img-top mt-2" alt="Tono 10.2 Aclarante al Irisado" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">10.2</h5>
+                                        <p class="card-text">Aclarante al Irisado</p>
+                                        <input type="text" class="item-name" name="10.2 Aclarante al Irisado" value="10.2 Aclarante al Irisado" style="display: none;">
+                                        <input type="number" class="quantity" name="10.2 Aclarante al Irisado" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/15Aclarantes_10-3Dorado.jpg" class="card-img-top mt-2" alt="Tono 10.3 Aclarante al Dorado" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">10.3</h5>
+                                        <p class="card-text">Aclarante al Dorado</p>
+                                        <input type="text" class="item-name" name="10.3 Aclarante al Dorado" value="10.3 Aclarante al Dorado" style="display: none;">
+                                        <input type="number" class="quantity" name="10.3 Aclarante al Dorado" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/15Aclarantes_10-4Cobrizo.jpg" class="card-img-top mt-2" alt="Tono 10.4 Aclarante al Cobrizo" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">10.4</h5>
+                                        <p class="card-text">Aclarante al Cobrizo</p>
+                                        <input type="text" class="item-name" name="10.4 Aclarante al Cobrizo" value="10.4 Aclarante al Cobrizo" style="display: none;">
+                                        <input type="number" class="quantity" name="10.4 Aclarante al Cobrizo" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/15Aclarantes_100-0SuperNatural.jpg" class="card-img-top mt-2" alt="Tono 100.0 Aclarante al Natural" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">100.0</h5>
+                                        <p class="card-text">Superaclarante al Natural</p>
+                                        <input type="text" class="item-name" name="100.0 Aclarante al Natural" value="100.0 Aclarante al Natural" style="display: none;">
+                                        <input type="number" class="quantity" name="100.0 Aclarante al Natural" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/15Aclarantes_100-1SuperCeniza.jpg" class="card-img-top mt-2" alt="Tono 100.1 Aclarante al Ceniza" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">100.1</h5>
+                                        <p class="card-text">Aclarante al Ceniza</p>
+                                        <input type="text" class="item-name" name="100.1 Aclarante al Ceniza" value="100.1<Aclarante al Ceniza" style="display: none;">
+                                        <input type="number" class="quantity" name="100.1 Aclarante al Ceniza" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <!-- <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/15Aclarantes_100-2SuperIrisado.jpg" class="card-img-top mt-2" alt="Tono 100.2 Aclarante al Irisado" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">100.2</h5>
+                                        <p class="card-text">Aclarante al Irisado</p>
+                                        <input type="text" class="item-name" name="100.2 Aclarante al Irisado" value="100.2 Aclarante al Irisadoa" style="display: none;">
+                                        <input type="number" class="quantity" name="100.2 Aclarante al Irisado" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div> -->
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/15Aclarantes_100-1SuperCeniza.jpg" class="card-img-top mt-2" alt="Tono 100.3 Aclarante al Dorado" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">100.3</h5>
+                                        <p class="card-text">Aclarante al Dorado</p>
+                                        <input type="text" class="item-name" name="100.3 Aclarante al Dorado" value="100.3 Aclarante al Dorado" style="display: none;">
+                                        <input type="number" class="quantity" name="100.3 Aclarante al Dorado" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                    </div>        
+                </div>
+        </div>
+            <!-- fin de aclarantes   -->
+    </section>
+    <section class="seccion-tittle">
+        <h3>INTENSIFICADORES</h3>
+        <div class="container elements">
+                <div class="mt-5 color-list mb-10px" style="align-items: center;">
+                    <div class="row row-cols-2 row-cols-sm-4 row-cols-md-6 row-cols-lg-6">
+                        <!-- Primer artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/16Instensificador_0-11Verde.jpg" class="card-img-top mt-2" alt="Tono 0.11 Intensificador Verde" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">0.11</h5>
+                                        <p class="card-text">Intensificador Verde</p>
+                                        <input type="text" class="item-name" name="0.11 Intensificador Verde" value="0.11 Intensificador Verde" style="display: none;">
+                                        <input type="number" class="quantity" name="0.11 Intensificador Verde" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/16Instensificador_0-22Violeta.jpg" class="card-img-top mt-2" alt="Tono 0.22 Intensificador Violeta" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">0.22</h5>
+                                        <p class="card-text">Intensificador Violeta</p>
+                                        <input type="text" class="item-name" name="0.22 Intensificador Violeta" value="0.22 Intensificador Violeta" style="display: none;">
+                                        <input type="number" class="quantity" name="0.22 Intensificador Violeta" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/16Instensificador_0-33Amarillo.jpg" class="card-img-top mt-2" alt="Tono 0.33 Intensificador Amarillo" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">0.33</h5>
+                                        <p class="card-text">Intensificador Amarillo</p>
+                                        <input type="text" class="item-name" name="0.33 Intensificador Amarillo" value="0.33 Intensificador Amarillo" style="display: none;">
+                                        <input type="number" class="quantity" name="0.33 Intensificador Amarillo" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/16Instensificador_0-44Cobre.jpg" class="card-img-top mt-2" alt="Tono 0.44 Intensificador Cobrizo" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">0.44</h5>
+                                        <p class="card-text">Intensificador Cobrizo</p>
+                                        <input type="text" class="item-name" name="0.44 Intensificador Cobrizo" value="0.44 Intensificador Cobrizo" style="display: none;">
+                                        <input type="number" class="quantity" name="0.44 Intensificador Cobrizo" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <!-- <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/16Instensificador_0-66ROjo.jpg" class="card-img-top mt-2" alt="Tono 0.66 intensificador Rojo" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">0.66</h5>
+                                        <p class="card-text">intensificador Rojo</p>
+                                        <input type="text" class="item-name" name="0.66 intensificador Rojo" value="0.66 intensificador Rojo" style="display: none;">
+                                        <input type="number" class="quantity" name="0.66 intensificador Rojo" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div> -->
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/16Instensificador_0-77Azul.jpg" class="card-img-top mt-2" alt="Tono 0.77 intensificador Azul" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">0.77</h5>
+                                        <p class="card-text">intensificador Azul</p>
+                                        <br>
+                                        <input type="text" class="item-name" name="0.77 intensificador Azul" value="0.77 intensificador Azul" style="display: none;">
+                                        <input type="number" class="quantity" name="0.77 intensificador Azul" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/16Instensificador_0-12Gris.jpg" class="card-img-top mt-2" alt="Tono 0.12 Intensificador Gris" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">0.12</h5>
+                                        <p class="card-text">Intensificador Gris</p>
+                                        <br>
+                                        <input type="text" class="item-name" name="0.12 Intensificador Gris" value="0.12 Intensificador Gris" style="display: none;">
+                                        <input type="number" class="quantity" name="0.12 Intensificador Gris" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/16Instensificador_0-631Chocolate.jpg" class="card-img-top mt-2" alt="Tono 0.631 Intensificador Chocolate" style="width: 100px; height: 100px;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">0.631</h5>
+                                        <p class="card-text">Intensificador Chocolate</p>
+                                        <input type="text" class="item-name" name="0.631 Intensificador Chocolate" value="0.631 Intensificador Chocolate" style="display: none;">
+                                        <input type="number" class="quantity" name="0.631 Intensificador Chocolate" value="0" min="0" style="width: 8rem;">
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- fin artículo -->
+                    </div>        
+                </div>
+        </div>
+            <!-- fin de intensificadores   -->
+    </section>
+    <section class="seccion-tittle">
+        <h3>FANTASIAS</h3>
+            <div class="container elements">
+                <div class="mt-5 color-list mb-10px" style="align-items: center;">
+                    <div class="row row-cols-2 row-cols-sm-4 row-cols-md-6 row-cols-lg-6">
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/Nuevos fantasias/TURQUESA MARINA.jpg" class="card-img-top mt-2" alt="Tono Fantasia Turquesa Marina" style="width: 100px; height: 100px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fantasia</h5>
+                                    <p class="card-text">Turquesa Marina</p>
+                                    <input type="text" class="item-name" name="Fantasia Turquesa Marina" value="Fantasia Turquesa Marina" style="display: none;">
+                                    <input type="number" class="quantity" name="Fantasia Turquesa Marina" value="0" min="0" style="width: 8rem;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/Nuevos fantasias/CELESTE NEPTUNO.jpg" class="card-img-top mt-2" alt="Tono Celeste Neptuno" style="width: 100px; height: 100px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fantasia</h5>
+                                    <p class="card-text">Celeste Neptuno</p>
+                                    <input type="text" class="item-name" name="Fantasia Celeste Neptuno" value="Fantasia Celeste Neptuno" style="display: none;">
+                                    <input type="number" class="quantity" name="Fantasia Celeste Neptuno" value="0" min="0" style="width: 8rem;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/Nuevos fantasias/AZUL INFINITO.jpg" class="card-img-top mt-2" alt="Tono Fantasia Azul Infinito" style="width: 100px; height: 100px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fantasia</h5>
+                                    <p class="card-text">Azul Infinito</p>
+                                    <input type="text" class="item-name" name="Fantasia Azul Infinito" value="Fantasia Azul Infinito" style="display: none;">
+                                    <input type="number" class="quantity" name="Fantasia Azul Infinito" value="0" min="0" style="width: 8rem;">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/Nuevos fantasias/VIOLETA TERCIOPELO.jpg" class="card-img-top mt-2" alt="Tono Fantasia Violeta Terciopelo" style="width: 100px; height: 100px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fantasia</h5>
+                                    <p class="card-text">Violeta Terciopelo</p>
+                                    <input type="text" class="item-name" name="Fantasia Violeta Terciopelo" value="Fantasia Violeta Terciopelo" style="display: none;">
+                                    <input type="number" class="quantity" name="Fantasia Violeta Terciopelo" value="0" min="0" style="width: 8rem;">
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- fin artículo -->
+                        <!-- <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/Nuevos fantasias/ROSA DIAMANTE.jpg" class="card-img-top mt-2" alt="Tono Fantasia Rosa Diamante" style="width: 100px; height: 100px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fantasia</h5>
+                                    <p class="card-text">Rosa Diamante</p>
+                                    <input type="text" class="item-name" name="Fantasia Rosa Diamante" value="Fantasia Rosa Diamante" style="display: none;">
+                                    <input type="number" class="quantity" name="Fantasia Rosa Diamante" value="0" min="0" style="width: 8rem;">
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/Nuevos fantasias/ROSA ESCÁNDALO.jpg" class="card-img-top mt-2" alt="Tono Fantasia Rosa Escandalo" style="width: 100px; height: 100px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fantasia</h5>
+                                    <p class="card-text">Rosa Escandalo</p>
+                                    <input type="text" class="item-name" name="Fantasia Rosa Escandalo" value="Fantasia Rosa Escandalo" style="display: none;">
+                                    <input type="number" class="quantity" name="Fantasia Rosa Escandalo" value="0" min="0" style="width: 8rem;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/Nuevos fantasias/FUCSIA NEON.jpg" class="card-img-top mt-2" alt="Tono Fantasia Fucsia Neon" style="width: 100px; height: 100px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fantasia</h5>
+                                    <p class="card-text">Fucsia Neon</p>
+                                    <input type="text" class="item-name" name="Fantasia Fucsia Neon" value="Fantasia Fucsia Neon" style="display: none;">
+                                    <input type="number" class="quantity" name="Fantasia Fucsia Neon" value="0" min="0" style="width: 8rem;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/Nuevos fantasias/ROJO FURIA.jpg" class="card-img-top mt-2" alt="Tono Fantasia Rojo Furia" style="width: 100px; height: 100px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fantasia</h5>
+                                    <p class="card-text">Rojo Furia</p>
+                                    <input type="text" class="item-name" name="Fantasia Rojo Furia" value="Fantasia Rojo Furia" style="display: none;">
+                                    <input type="number" class="quantity" name="Fantasia Rojo Furia" value="0" min="0" style="width: 8rem;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/Nuevos fantasias/AMARILLO ELÉCTRICO.jpg" class="card-img-top mt-2" alt="Tono Fantasia Amarillo Electrico" style="width: 100px; height: 100px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fantasia</h5>
+                                    <p class="card-text">Amarillo Electrico</p>
+                                    <input type="text" class="item-name" name="Fantasia Amarillo Electrico" value="Fantasia Amarillo Electrico" style="display: none;">
+                                    <input type="number" class="quantity" name="Fantasia Amarillo Electrico" value="0" min="0" style="width: 8rem;">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/Nuevos fantasias/AMARILLO ORO.jpg" class="card-img-top mt-2" alt="Tono Fantasia Amarillo Oro" style="width: 100px; height: 100px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fantasia</h5>
+                                    <p class="card-text">Amarillo Oro</p>
+                                    <input type="text" class="item-name" name="Fantasia Amarillo Oro" value="Fantasia Amarillo Oro" style="display: none;">
+                                    <input type="number" class="quantity" name="Fantasia Amarillo Oro" value="0" min="0" style="width: 8rem;">
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- fin artículo -->
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/Nuevos fantasias/NARANJA MAGMA.jpg" class="card-img-top mt-2" alt="Tono Naranja Magna" style="width: 100px; height: 100px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fantasia</h5>
+                                    <p class="card-text">Naranja Magna</p>
+                                    <input type="text" class="item-name" name="Fantasia Naranja Magna" value="Fantasia Naranja Magna" style="display: none;">
+                                    <input type="number" class="quantity" name="Fantasia Naranja Magna" value="0" min="0" style="width: 8rem;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/Nuevos fantasias/LIMA TAHITÍ.jpg" class="card-img-top mt-2" alt="Tono Lima Tahiti" style="width: 100px; height: 100px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fantasia</h5>
+                                    <p class="card-text">Lima Tahiti</p>
+                                    <input type="text" class="item-name" name="Fantasia Lima Tahiti" value="Fantasia Lima Tahiti" style="display: none;">
+                                    <input type="number" class="quantity" name="Fantasia Lima Tahiti" value="0" min="0" style="width: 8rem;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col color-item" data-price="1" style="place-items: center;margin: auto; width: 10rem; border-radius: 12px; margin: 10px;">
+                            <div class="card" style="width: 9rem; align-items: center;">
+                                <img src="Images/Nuevos fantasias/VERDE AMAZONA.jpg" class="card-img-top mt-2" alt="Tono Fantasia Verde Amazona" style="width: 100px; height: 100px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fantasia</h5>
+                                    <p class="card-text">Verde Amazona</p>
+                                    <input type="text" class="item-name" name="Fantasia Verde Amazona" value="Fantasia Verde Amazona" style="display: none;">
+                                    <input type="number" class="quantity" name="Fantasia Verde Amazona" value="0" min="0" style="width: 8rem;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <div class="total" style="width: 100%;">
+        <span>Total: </span>
+        <span id="total-amount">0</span>
+    </div>
+    <input type="hidden" name="DetallesArticulos" id="detalles-articulos">
+    <input type="hidden" name="TotalAmount" id="total-amount-hidden" value="0">
+    <div>
+        <button type="submit" class="btn btn-dark btn-css">Enviar</button>
+        <input type="reset" class="btn btn-dark btn-css" value="Cancelar" onclick="limpiarFormulario()">
+    </div>
+    <!-- <div>
+        <button type="button" id="export-button" class="btn btn-dark btn-css">Exportar a CSV</button>
+    </div> -->
+    </form>
+</div>
+</main>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <footer class="bg-light text-center text-muted py-3 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Todos los derechos reservados. Desarrollado por Stockin Lavanda.</p>
+            </div>
+    </footer>
+</body>
+</html>

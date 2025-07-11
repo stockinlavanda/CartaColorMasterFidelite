@@ -1,0 +1,154 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap");
+/* main.css */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+}
+
+.container {
+  text-align: center;
+  place-items: center;
+  justify-items: center;
+}
+
+header h1 {
+  color: #fff;
+  background-color: #c5116c;
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}
+header p {
+  color: #fff;
+  background-color: #c5116c;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+main h1 {
+  color: #fff;
+  background-color: #c5116c;
+  text-align: center;
+  padding: auto;
+  font-size: 36px;
+}
+main h2 {
+  text-align: center;
+  padding: auto;
+  font-size: 36px;
+}
+main h3 {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 25px;
+}
+main .seccion-tittle {
+  text-align: center;
+  padding: auto;
+  margin: 10px;
+  width: 100%;
+}
+
+.centrar-contenido {
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.color-list {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items: center;
+}
+
+.color-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.elements {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.card .card img {
+  margin: auto;
+}
+
+input.quantity {
+  width: 40px;
+}
+
+.total {
+  color: #fff;
+  background-color: #c5116c;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.btn-css {
+  color: #fff;
+  background-color: #c5116c;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.zoomable-image {
+  width: 300px; /* Ancho de la imagen */
+  transition: transform 0.2s; /* Transición suave al aplicar el zoom */
+}
+
+.zoomable-image:hover {
+  transform: scale(1.5); /* Aplicar un zoom de 1.5 veces el tamaño original en el hover */
+}
+
+@media (min-width: 1024px) {
+  .color-list {
+    row-cols: 3;
+    justify-content: center;
+  }
+}
+@media (max-width: 1023px) {
+  .color-list {
+    row-cols: 2;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=main.css.map */
