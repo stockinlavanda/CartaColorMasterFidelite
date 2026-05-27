@@ -18,20 +18,36 @@ html, body {
   justify-items: center;
 }
 
+header {
+  background: linear-gradient(135deg, #c5116c 0%, #8b0048 100%);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
+}
 header h1 {
   color: #fff;
-  background-color: #c5116c;
+  background: transparent;
   text-align: center;
-  padding: 20px;
-  font-size: 30px;
+  padding: 14px 16px 4px;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin: 0;
 }
 header p {
-  color: #fff;
-  background-color: #c5116c;
+  color: rgba(255, 255, 255, 0.88);
+  background: transparent;
   text-align: center;
-  padding: 20px;
-  font-size: 20px;
-  font-weight: bold;
+  padding: 2px 16px 14px;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  header h1 { font-size: 24px; padding: 18px 24px 6px; }
+  header p  { font-size: 14px; padding: 4px 24px 18px; }
 }
 
 main {
@@ -54,10 +70,16 @@ main h2 {
   font-size: 36px;
 }
 main h3 {
+  display: inline-block;
   text-align: center;
-  padding: 0;
-  margin: 0;
-  font-size: 25px;
+  padding: 5px 22px;
+  margin: 0 auto 4px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  border: 1.5px solid currentColor;
 }
 main .seccion-tittle {
   text-align: center;
@@ -202,5 +224,83 @@ input.quantity {
     justify-content: center;
   }
 }
+
+/* ============================================================
+   CARD HOVER — lift suave en mobile y desktop
+   ============================================================ */
+.card {
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  border-radius: 12px !important;
+  overflow: hidden;
+}
+.card:active,
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* ============================================================
+   SECCIONES — color de borde, fondo y título tipo badge
+   ============================================================ */
+
+/* NATURALES */
+.sec-naturales h3          { color: #7a5230; background: #f5e9dc; border-color: #b08060; }
+.sec-naturales .card       { border: 1.5px solid #c4a882 !important; background-color: #fffbf8; }
+
+/* NATURALES INTENSOS */
+.sec-naturales-intensos h3    { color: #5e3518; background: #f0dcc8; border-color: #8a5c30; }
+.sec-naturales-intensos .card { border: 1.5px solid #a07850 !important; background-color: #fdf8f2; }
+
+/* CENIZAS */
+.sec-cenizas h3          { color: #3d6277; background: #dde8f0; border-color: #7a9bb5; }
+.sec-cenizas .card       { border: 1.5px solid #8fb0c8 !important; background-color: #f5f8fb; }
+
+/* CENIZAS INTENSOS */
+.sec-cenizas-intensos h3    { color: #2d5a72; background: #ccdde8; border-color: #4a7a9b; }
+.sec-cenizas-intensos .card { border: 1.5px solid #5a90b0 !important; background-color: #f0f5f9; }
+
+/* NACARADOS Y GRISES */
+.sec-nacarados h3          { color: #4a5568; background: #e5eaef; border-color: #9aa5b4; }
+.sec-nacarados .card       { border: 1.5px solid #b0bcc8 !important; background-color: #f6f7f9; }
+
+/* CENIZAS AZULADOS */
+.sec-cenizas-azulados h3    { color: #2c4e8a; background: #d0dcf0; border-color: #3d6ba5; }
+.sec-cenizas-azulados .card { border: 1.5px solid #5080c0 !important; background-color: #f0f4fb; }
+
+/* IRISADOS — el 2.22 Cherry tiene inline style más fuerte, siempre gana */
+.sec-irisados h3          { color: #6a3a96; background: #e8d8f8; border-color: #9060c0; }
+.sec-irisados .card       { border: 1.5px solid #a878d0 !important; background-color: #faf4ff; }
+
+/* DORADOS */
+.sec-dorados h3          { color: #7a6000; background: #f5e8a0; border-color: #c89010; }
+.sec-dorados .card       { border: 1.5px solid #d4a820 !important; background-color: #fdfbee; }
+
+/* MARRONES CALIDOS Y FRIOS */
+.sec-marrones h3          { color: #6a4818; background: #f0d8b8; border-color: #a07040; }
+.sec-marrones .card       { border: 1.5px solid #b88050 !important; background-color: #fdf6ec; }
+
+/* COBRIZOS */
+.sec-cobrizos h3          { color: #8a4010; background: #f5ccaa; border-color: #c06020; }
+.sec-cobrizos .card       { border: 1.5px solid #d07830 !important; background-color: #fdf2e8; }
+
+/* CAOBAS */
+.sec-caobas h3          { color: #6a1800; background: #f0bba8; border-color: #8a2000; }
+.sec-caobas .card       { border: 1.5px solid #a83010 !important; background-color: #fdf0ec; }
+
+/* ROJIZOS */
+.sec-rojizos h3          { color: #8a1010; background: #f5c0b8; border-color: #b82010; }
+.sec-rojizos .card       { border: 1.5px solid #c83020 !important; background-color: #fdf2f0; }
+
+/* ACLARANTES */
+.sec-aclarantes h3          { color: #786000; background: #f5e878; border-color: #c0a000; }
+.sec-aclarantes .card       { border: 1.5px solid #d0b010 !important; background-color: #fdfcee; }
+
+/* INTENSIFICADORES */
+.sec-intensificadores h3    { color: #5a1880; background: #e8c8f5; border-color: #7030a0; }
+.sec-intensificadores .card { border: 1.5px solid #8840b8 !important; background-color: #faf0ff; }
+
+/* FANTASIAS */
+.sec-fantasias h3          { color: #8a0048; background: #f8c0dc; border-color: #c5116c; }
+.sec-fantasias .card       { border: 1.5px solid #d83080 !important; background-color: #fef0f7; }
 
 /*# sourceMappingURL=main.css.map */
